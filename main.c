@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
+int main(void)
 {
-  int x, y, z, m;
-  int a, b, c;
-  x=2;
-  z=1;
-  a=3;
-  b=4;
-  c=5;
+  int a, b;    
+  printf("input two integers:");
+  scanf("%d %d", &a, &b);
   
-  y=a*x*x+b*x+c;
-  m=(x+y+z)/3;
+  int Add_R=a+b;  
+  int Sub_R=a-b;
+  int Mul_R=a*b;
+  int Div_R=a/b;
+  int Div2_R=a%b;
   
-  printf("y=%d, m=%d", y,m);
+  printf("+result is %d\n", Add_R);
+  printf("-result is %d\n", Sub_R);
+  printf("*result is %d\n", Mul_R);
+  printf("/result is %d\n", Div_R);
+  printf("%result is %d\n", Div2_R);
+  
+  
   system("PAUSE");	
 }
