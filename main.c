@@ -17,7 +17,7 @@ int main(void)
   printf("-result is %d\n", Sub_R);
   printf("*result is %d\n", Mul_R);
   printf("/result is %d\n", Div_R);
-  printf("%result is %d\n", Div2_R);
+  printf("%%result is %d\n", Div2_R);
   
   
   system("PAUSE");	
