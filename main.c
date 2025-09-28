@@ -3,13 +3,15 @@
 
 int main(void)
 {   
-    int Sec, Min;
-    printf("input the second: ");
-    scanf("%d", &Sec);
+    int year;
+    printf("input the year: ");
+    scanf("%d", &year);
     
-    Min=Sec/60;
-    Sec=Sec%60;
+    int Isleap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
     
-    printf("The time is %d: %d\n", Min, Sec);
+    
+    
+    printf("Is the year %d the leap year?:", year);
+    printf("%d", Isleap);
     system("PAUSE");
 }
